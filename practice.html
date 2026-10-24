@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Practice assignment 5=</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .practice-container { max-width: 800px; margin: 40px auto; padding: 20px; }
+        .task-card { background: #eee9c9; border: 2px solid #b2a788; padding: 20px; margin-bottom: 20px; border-radius: 4px; box-shadow: 3px 3px 0px #b2a788; }
+        .interactive-card { padding: 20px; background-color: #d1d8cb; border: 2px dashed #4a3e3d; cursor: pointer; outline: none; margin-top: 10px; }
+        .interactive-card.highlight { background-color: #ebacdd; border-color: #c75cc7; }
+        .interactive-card:focus-visible { box-shadow: 0 0 0 4px #595080; }
+    </style>
+</head>
+<body>
+
+    <div class="practice-container">
+        <h1>Individual JavaScript Practice assignment 5</h1>
+
+        <section class="task-card">
+            <h2>Task 6: Counter</h2>
+            <p>Current value: <span id="counter-val">0</span></p>
+            <button id="btn-dec" class="btn">Decrease</button>
+            <button id="btn-reset" class="btn">Reset</button>
+            <button id="btn-inc" class="btn">Increase</button>
+        </section>
+
+        
+        <section class="task-card">
+            <h2>Task 7: Live Text Preview</h2>
+            <input type="text" id="text-input" placeholder="Type something..." class="search-input" style="width: 100%; margin-bottom: 10px;">
+            <p>Preview: <strong id="text-preview">Your text will appear here</strong></p>
+            <p>Character count: <span id="char-count">0</span></p>
+            <button id="btn-clear" class="btn">Clear</button>
+        </section>
+
+       
+<section class="task-card">
+    <h2>Task 8: Image Switcher</h2>
+    <select id="img-select" class="form-select" style="margin-bottom: 15px;">
+        <option value="apple">Applejack</option>
+        <option value="dash">Rainbow Dash</option>
+        <option value="fluttershy">Fluttershy</option>
+        <option value="pinky">Pinkie Pie</option>
+        <option value="rarity">Rarity</option>
+        <option value="twi">Twilight Sparkle</option>
+    </select>
+    <div>
+        <img id="switcher-img" src="images/apple.png" alt="Applejack" style="max-width: 200px; height: 200px; display: block; margin-bottom: 10px; object-fit: contain;">
+        <p id="img-caption">Caption: Applejack - Earth Pony</p>
+    </div>
+</section>
+
+        
+        <section class="task-card">
+            <h2>Task 9: Keyboard Events</h2>
+            <input type="text" id="keyboard-input" placeholder="Click here and press keys..." class="search-input" style="width: 100%; margin-bottom: 10px;">
+            <p>Last pressed key: <span id="key-status" style="font-weight: bold;">None</span></p>
+            <p>Submitted text (Press Enter): <span id="submitted-result" style="font-style: italic;"></span></p>
+        </section>
+
+        
+        <section class="task-card">
+            <h2>Task 10: Mouse & Focus Events</h2>
+            <div id="focus-target" tabindex="0" class="interactive-card">
+                Hover with mouse or press Tab to focus me!
+            </div>
+            <p id="focus-status" style="margin-top: 10px;">Status: Card is inactive.</p>
+        </section>
+
+    </div>
+
+    <script src="practice.js"></script>
+</body>
+</html>
